@@ -74,7 +74,7 @@ public class ClienteRestController {
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
-		response.put("mensaje", "El cliente se ha creado con exito");
+		response.put("mensaje", "El cliente se ha creado con éxito!");
 		response.put("cliente", clienteNuevo);
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
 	}
@@ -108,7 +108,7 @@ public class ClienteRestController {
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		
-		response.put("mensaje", "El cliente ha sido actualizdo con éxito!");
+		response.put("mensaje", "El cliente ha sido actualizado con éxito!");
 		response.put("cliente", clienteActualizado);
 		
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.CREATED);
